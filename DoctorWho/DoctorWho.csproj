@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DoctorWho.Db\DoctorWho.Db.csproj">
+      <Project>{6a4e62b3-3a4c-45cf-902b-17785e35bc41}</Project>
+      <Name>DoctorWho.Db</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DoctorWho.Db
 {
     public class Author
     {
+        public Author()
+        {
+            EpAuthor = new List<Episode>();
+        }
+        public int AuthorId { get; set; }
+        public string AuthorName { get; set; }
+        public List<Episode> EpAuthor { get; set; }
     }
 }
